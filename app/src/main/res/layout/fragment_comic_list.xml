@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/filter_budget"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:inputType="numberDecimal"
+        android:hint="Enter your budget to filter list"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/filter_budget"
+        android:id="@+id/comics_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
